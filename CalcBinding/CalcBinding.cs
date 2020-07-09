@@ -91,7 +91,7 @@ namespace CalcBinding
                     ValidatesOnDataErrors = ValidatesOnDataErrors,
                     ValidatesOnExceptions = ValidatesOnExceptions,
                     FallbackValue = FallbackValue,
-#if NET45
+#if !NET40
                     ValidatesOnNotifyDataErrors = ValidatesOnNotifyDataErrors,
 #endif
             };
@@ -147,7 +147,7 @@ namespace CalcBinding
                     ValidatesOnDataErrors = ValidatesOnDataErrors,
                     ValidatesOnExceptions = ValidatesOnExceptions,
                     FallbackValue = FallbackValue,
-#if NET45
+#if !NET40
                     ValidatesOnNotifyDataErrors = ValidatesOnNotifyDataErrors,
 #endif
                 };
@@ -491,7 +491,7 @@ namespace CalcBinding
         [DefaultValue(false)]
         public bool ValidatesOnExceptions { get; set; }
 
-#if NET45
+#if !NET40
         //
         // Summary:
         //     Gets or sets a value that indicates whether to include the System.Windows.Controls.NotifyDataErrorValidationRule.
